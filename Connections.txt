@@ -1,0 +1,11 @@
+Pin Numbers:
+
+servo = 17
+
+in1 = 18
+in2 = 16
+enA = 22
+
+in3 = 11
+in4 = 13
+enB = 15

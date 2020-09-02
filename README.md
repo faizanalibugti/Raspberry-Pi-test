@@ -4,13 +4,13 @@
 
 servo = 17
 
-in1 = 18
-in2 = 16
-enA = 22
+in1 = 24
+in2 = 23
+enA = 25
 
-in3 = 11
-in4 = 13
-enB = 15
+in3 = 5
+in4 = 6
+enB = 13
 
 # Raspberry Pi Temperature Check:
 

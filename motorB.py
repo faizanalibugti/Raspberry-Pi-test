@@ -1,9 +1,11 @@
 import RPi.GPIO as GPIO    
 from time import sleep
 
-in3 = 11
-in4 = 13
-enB = 15
+in3 = 5
+in4 = 6
+enB = 13
+
+GPIO.setmode(GPIO.BCM)
 
 // Motor B
 GPIO.setup(in3,GPIO.OUT)

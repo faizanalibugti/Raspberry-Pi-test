@@ -37,50 +37,45 @@ p2.start(25)
 servo = AngularServo(17, min_angle=-90, max_angle=90)
 
 def forward(tf):
-    servo.angle = 5  //straight
+    servo.angle = 5 
     GPIO.output(in1,GPIO.HIGH)
     GPIO.output(in2,GPIO.LOW)
     GPIO.output(in3,GPIO.HIGH)
     GPIO.output(in4,GPIO.LOW)
     sleep(tf)
-    GPIO.cleanup()
 
 def left(tf):
-    servo.angle = -20  //left
+    servo.angle = -20 
     GPIO.output(in1,GPIO.HIGH)
     GPIO.output(in2,GPIO.LOW)
     GPIO.output(in3,GPIO.HIGH)
     GPIO.output(in4,GPIO.LOW)
     sleep(tf)
-    GPIO.cleanup()
 
 
 def right(tf):
-    servo.angle = 35  //right
+    servo.angle = 35  
     GPIO.output(in1,GPIO.HIGH)
     GPIO.output(in2,GPIO.LOW)
     GPIO.output(in3,GPIO.HIGH)
     GPIO.output(in4,GPIO.LOW)
     sleep(tf)
-    GPIO.cleanup()
 
 def stop(tf):
-    servo.angle = 5  //straight
+    servo.angle = 5  
     GPIO.output(in1,GPIO.LOW)
     GPIO.output(in2,GPIO.LOW)
     GPIO.output(in3,GPIO.LOW)
     GPIO.output(in4,GPIO.LOW)
     sleep(tf)
-    GPIO.cleanup()
 
 def backward(tf):
-    servo.angle = 5  //straight
+    servo.angle = 5  
     GPIO.output(in1,GPIO.LOW)
     GPIO.output(in2,GPIO.HIGH)
     GPIO.output(in3,GPIO.LOW)
     GPIO.output(in4,GPIO.HIGH)
     sleep(tf)
-    GPIO.cleanup()
 
 def key_input(event):
     print('Key: ', event.char)

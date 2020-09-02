@@ -7,7 +7,7 @@ enB = 13
 
 GPIO.setmode(GPIO.BCM)
 
-// Motor B
+#Motor B
 GPIO.setup(in3,GPIO.OUT)
 GPIO.setup(in4,GPIO.OUT)
 GPIO.setup(enB,GPIO.OUT)
@@ -20,30 +20,25 @@ p2.start(25)
 def forward():
     GPIO.output(in3,GPIO.HIGH)
     GPIO.output(in4,GPIO.LOW)
-    GPIO.cleanup()
 
 def backward():
     GPIO.output(in3,GPIO.LOW)
     GPIO.output(in4,GPIO.HIGH)
-    GPIO.cleanup()
 
 def low():
     p2.ChangeDutyCycle(25)
     GPIO.output(in3,GPIO.HIGH)
     GPIO.output(in4,GPIO.LOW)
-    GPIO.cleanup()
 
 def medium():
     p2.ChangeDutyCycle(50)
     GPIO.output(in3,GPIO.HIGH)
     GPIO.output(in4,GPIO.LOW)
-    GPIO.cleanup()
 
 def high():
     p2.ChangeDutyCycle(75)
     GPIO.output(in3,GPIO.HIGH)
     GPIO.output(in4,GPIO.LOW)
-    GPIO.cleanup()
 
 forward()
 sleep(10)
